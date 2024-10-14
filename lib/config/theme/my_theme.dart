@@ -36,6 +36,7 @@ class MyTheme{
       headlineMedium: TextStyle(fontSize: 21,fontWeight:FontWeight.w500,color: Colors.black),
       titleMedium: TextStyle(fontSize: 19,color: Color(0xFF242424),fontWeight:FontWeight.w400),
      bodyMedium:  TextStyle(fontSize:20,fontWeight: FontWeight.w400,color: Colors.black ),
+
     ),
 
   );

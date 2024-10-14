@@ -20,8 +20,8 @@ List<Widget> tabs =[
   QuranTab(),
 
   HadethTab(),
-  RadioTab(),
   TsbehTab(),
+  RadioTab(),
   SettingsTab(),
 ];
 
