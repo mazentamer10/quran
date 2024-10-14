@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:quran_app/core/assets_manager.dart';
-import 'package:quran_app/core/colors_manager.dart';
-import 'package:quran_app/core/strings_manager.dart';
 import 'package:quran_app/presentation/modules/home_module/tabs/quran_tab/widgets/quran_header_widget.dart';
 import 'package:quran_app/presentation/modules/home_module/tabs/quran_tab/widgets/suranme_widget.dart';
 
