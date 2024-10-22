@@ -7,6 +7,7 @@ import 'package:quran_app/presentation/modules/home_module/tabs/quran_tab/quran_
 import 'package:quran_app/presentation/modules/home_module/tabs/radio_tab/radio_tab.dart';
 import 'package:quran_app/presentation/modules/home_module/tabs/settings_tab/settings_tab.dart';
 import 'package:quran_app/presentation/modules/home_module/tabs/tsbeh_tab/tsbeh_tab.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 class HomeScreen extends StatefulWidget {
 
    HomeScreen({super.key});
@@ -39,7 +40,7 @@ int selectedIndex = 0;
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          title: Text('Quran'),
+          title: Text(AppLocalizations.of(context)!.appTitle),
         ),
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: selectedIndex,
@@ -51,11 +52,11 @@ int selectedIndex = 0;
           },
 type: BottomNavigationBarType.shifting,
             items:  [
-              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon:ImageIcon(AssetImage(AssetsManager.quranIcon)),label: StringsManager.quranLabel),
-              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: ImageIcon(AssetImage(AssetsManager.hadethIcon)),label: StringsManager.hadithLabel),
-              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: ImageIcon(AssetImage(AssetsManager.tsebhIcon)),label: StringsManager.tasbehLabel),
-              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: ImageIcon(AssetImage(AssetsManager.radioIcon)),label: StringsManager.radioLabel),
-             BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: Icon(Icons.settings),label: StringsManager.settingsLabel),
+              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon:ImageIcon(AssetImage(AssetsManager.quranIcon)),label: AppLocalizations.of(context)!.quranTab),
+              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: ImageIcon(AssetImage(AssetsManager.hadethIcon)),label:  AppLocalizations.of(context)!.hadithTab),
+              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: ImageIcon(AssetImage(AssetsManager.tsebhIcon)),label: AppLocalizations.of(context)!.sebhaTab),
+              BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: ImageIcon(AssetImage(AssetsManager.radioIcon)),label: AppLocalizations.of(context)!.radioTab),
+             BottomNavigationBarItem(backgroundColor:ColorsManger.goldColor,icon: Icon(Icons.settings),label: AppLocalizations.of(context)!.sebhaTab),
 
             ]),
 body: tabs[selectedIndex]
